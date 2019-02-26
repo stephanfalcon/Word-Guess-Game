@@ -1,0 +1,27 @@
+#hanged{
+    width:100%;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+ 
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:100%;
+  }
+  body{
+    
+    background-image:url(), radial-gradient(circle,white,rgb(0, 0, 0));
+    background-image: url("../images/hangedman.jpg"); 
+    width:100%;
+    opacity:.7;
+    background-repeat:no-repeat;
+    background-size:cover;   
+  }
