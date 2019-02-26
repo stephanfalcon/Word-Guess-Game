@@ -1017,6 +1017,10 @@ var missed =[];
 
 var total = [];
 
+var wins = 0;
+
+var losses = 0;
+
 //event listener that returns keys entered
 document.onkeyup = function(event){
 
@@ -1075,7 +1079,8 @@ function start(){
     document.getElementById("outcome").innerHTML = "";
     document.getElementById("again").innerHTML = "";
     document.getElementById("lives").innerHTML = lives;
-    
+    document.getElementById("wins").innerHTML = wins;
+    document.getElementById("losses").innerHTML = losses;
 
     for(i=0; i < selected.length;i++){
         holder.push(" _ ");
@@ -1152,11 +1157,14 @@ function incorrect(){
 }
 //function for when you win
 function win(){
+    wins ++
     document.getElementById("outcome").innerHTML = "YOU WIN!!!";
     again();
+
 }
 //when you lose
 function lose(){
+    losses ++
     document.getElementById("outcome").innerHTML = "You lose, better luck next time";
     document.getElementById("dashes").innerHTML = selected;
     again();
